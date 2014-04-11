@@ -595,29 +595,6 @@
     <div></div>
     <div></div>
   </div>
-  <script type="text/javascript">
-
-    // botão para parar e dar play na música de fundo
-    (function(){
-      document.querySelector('a#mute').addEventListener('click', function(event){
-        event.preventDefault()
-
-        var audio = document.querySelector('audio')
-        var muteButton = document.querySelector('#mute')
-        var piao = document.querySelector('div#piao')
-
-        if ( audio.paused ) {
-          audio.play()
-          muteButton.innerHTML = '❚❚' // modifica legenda do botão
-          piao.className = 'rodando' // deixa o pião rodando
-        } else {
-          audio.pause()
-          muteButton.innerHTML = '▶' // modifica a legenda do botão
-          piao.className = '' // faz com que o pião pare de rodar
-        }
-      })
-    }())
-
-  </script>
+  <script type="text/javascript" src="./sort.js"></script>
 </body>
 </html>
